@@ -1,1 +1,17 @@
-
+[
+  {
+    "mode": "NULLABLE",
+    "name": "one",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "two",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "three",
+    "type": "STRING"
+  }
+]
