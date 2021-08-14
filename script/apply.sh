@@ -1,4 +1,4 @@
-for schema in `ls ../tables/*.json`; do
+for schema in $(ls ../tables/*.json); do
     table_name=`basename　${schema} | sed 's/\.[^\.]*$//'`
     query=`cat ../queries/${table_name}.sql`
     echo '*****'
