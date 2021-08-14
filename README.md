@@ -48,7 +48,7 @@ SELECT
 
 *you can copy schema.json for the table that already exists by the following command at GCP-console-shell
 
-```
+```sh
 $ bq show --project_id={project_id} --schema --format=prettyjson {dataset_name}.{table_name}
 ```
 
