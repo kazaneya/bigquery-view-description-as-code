@@ -3,7 +3,7 @@ echo '*** start ***'
 for dataset_name in $(ls -d -A ./tables/*/ | sed 's/\.\/tables\///g' | sed 's/\///g'); do
     for schema in $(ls ./tables/${dataset_name}/*.json); do
         which basename
-        table_name=$(basename　${schema} .json)
+        table_name=$(basename ${schema} .json)
         query=$(cat ./queries/${dataset_name}/${table_name}.sql)
         echo '*****'
         echo 'dataset_name: ${dataset_name}'
