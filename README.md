@@ -65,3 +65,5 @@ $ bq show --project_id={project_id} --schema --format=prettyjson {dataset_name}.
 <4> merge to main branch
 
 <5> BQ view will be updated after merge
+
+![Result Image](images/result.png)
