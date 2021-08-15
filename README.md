@@ -2,6 +2,11 @@
 
 ## Requirments
 
+- BigQuery
+  - the dataset for the view
+- GCP Service Account
+  -　permission: role/BigQuery.dataEditor
+  -　export: json key file
 - GitHub Actions
   - secrets.GCP_PROJECT_ID
   - secrets.GCP_SA_KEY
