@@ -2,6 +2,7 @@ name: BigQuery View Descrpition Demo
 on:
   push:
     branches: [ main, hotfix-ghaction-error ]
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
