@@ -1,0 +1,20 @@
+[
+  {
+    "name": "one",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "this is one as integer"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "two",
+    "type": "INTEGER",
+    "description": "this is two as integer"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "three",
+    "type": "STRING",
+    "description": "this is three as string"
+  }
+]
