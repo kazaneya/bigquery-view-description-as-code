@@ -1,6 +1,6 @@
 #!/bin/bash
 echo '*** start ***'
-for dataset_name in $(ls -d ./tables/*); do
+for dataset_name in $(ls -d -A ./tables/*/ | sed 's/\///g'); do
     for schema in $(ls ./tables/${dataset_name}/*.json); do
         table_name=$(basename　${schema} | sed 's/\.[^\.]*$//')
         query=$(cat ./queries/${dataset_name}/${table_name}.sql)
