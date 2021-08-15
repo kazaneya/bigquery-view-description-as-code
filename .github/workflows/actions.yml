@@ -1,7 +1,7 @@
 name: BigQuery View Descrpition Demo
 on:
   push:
-    branches: [ main ]
+    branches: [ main, hotfix-ghaction-error ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,4 +16,4 @@ jobs:
           export_default_credentials: true
       - name: Apply BQ View Description
         working-directory: ./
-        run: source　./scripts/apply.sh
+        run: ls -la && source　./scripts/apply.sh
