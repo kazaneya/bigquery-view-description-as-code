@@ -58,7 +58,8 @@ SELECT
 ```sh
 $ bq show --project_id={project_id} --schema --format=prettyjson {dataset_name}.{table_name}
 ```
-More details about schema definitions are available in [official docments](https://cloud.google.com/bigquery/docs/schemas).
+*More details about schema definitions are available in [official docments](https://cloud.google.com/bigquery/docs/schemas).
+
 <3> create Pull Request 
 
 <4> merge to main branch
