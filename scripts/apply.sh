@@ -9,7 +9,7 @@ for dataset_name in $(ls -d -A ./tables/*/ | sed 's/\.\/tables\///g' | sed 's/\/
         echo 'table_name: ${table_name}'
         echo 'schema: ${schema}'
         echo 'query: ${query}'
-        bq query --use_legacy_sql=false "'${query}'" && bq update --schema=${schema} ${dataset_name}.${table_name}
+        bq query --use_legacy_sql=false "${query}" && bq update --schema=${schema} ${dataset_name}.${table_name}
     done
 done
 echo '*** finish ***'
