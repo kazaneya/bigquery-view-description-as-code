@@ -1,3 +1,4 @@
+#!/bin/bash
 echo '*** start ***'
 for dataset_name in $(ls　-d ./tables/*); do
     for schema in $(ls ./tables/${dataset_name}/*.json); do
