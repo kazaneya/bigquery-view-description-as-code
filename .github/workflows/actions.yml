@@ -17,4 +17,4 @@ jobs:
           export_default_credentials: true
       - name: Apply BQ View Description
         working-directory: ./
-        run: ls -la && sh　./scripts/apply.sh
+        run: ls -la ./scripts && sh　./scripts/apply.sh
