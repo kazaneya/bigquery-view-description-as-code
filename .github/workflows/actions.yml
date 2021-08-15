@@ -15,6 +15,10 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
+      - name: Add Permission to Script
+        working-directory: ./
+        run: chmod +x ./scripts/apply.sh
       - name: Apply BQ View Description
         working-directory: ./
-        run: chmod +x ./scripts/apply.sh && ls -la ./scripts && sh　./scripts/apply.sh
+        run: scripts/apply.sh
+        shell: bash
