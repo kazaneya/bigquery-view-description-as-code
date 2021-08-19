@@ -1,7 +1,7 @@
 name: BigQuery View Descrpition Demo
 on:
   push:
-    branches: [ main ]
+    branches: [ main, demo ]
   workflow_dispatch:
 jobs:
   build:
