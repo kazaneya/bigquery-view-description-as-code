@@ -10,8 +10,10 @@
     - role/BigQuery.jobUser
   - export: json key file
 - GitHub Actions
-  - secrets.GCP_PROJECT_ID
-  - secrets.GCP_SA_KEY
+  - `secrets.GCP_PROJECT_ID`
+    - Project ID (not project number) of the Google Cloud project
+  - `secrets.GCP_SA_KEY`
+    - Set json key (preferred to compress in single-line)
 
 ## Usage
 
